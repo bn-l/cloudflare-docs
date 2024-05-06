@@ -43,6 +43,21 @@ kv_namespaces = [
 ]
 ```
 
+## Smart Placement
+
+[Smart placement](https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement) automatically place your workloads in an optimal location to minimize latency. If you are running back-end logic in a Worker, running it closer to your back-end infrastructure rather than the end user may result in better performance.
+
+To enable smart placement add the following to your `wrangler.toml` file:
+
+```toml
+---
+filename: wrangler.toml
+---
+[placement]
+mode = "smart"
+```
+
+
 ## Environments
 
 The configuration for a Worker can become complex when you define different [environments](/workers/wrangler/environments/), and each environment has its own configuration.
