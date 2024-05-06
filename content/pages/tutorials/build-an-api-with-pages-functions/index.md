@@ -180,7 +180,7 @@ export function onRequestGet() {
 }
 ```
 
-This code gets blog data (from `data.js`, which you will make in step 8) and returns it as a JSON response from the path `/api/posts`.
+This code gets blog data (from `data.js`, which you will make in step 8) and returns it as a JSON response from the path `/api/posts`. **Note:** The [Response.json](https://developer.mozilla.org/en-US/docs/Web/API/Response/json_static) **static method** is a whatwg standard introduced [recently](https://github.com/whatwg/fetch/pull/1392) and is used to formulate a json response nicely.
 
 5. In the `api` directory, create a directory named  `post`.
 6. In the `post` directory, create a `data.js` file.
